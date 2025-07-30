@@ -1,0 +1,27 @@
+/* Global styling adjustments */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Change the color of the main header bar */
+.skin-blue .main-header .navbar {
+    background-color: #FF5C3B !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Change the color of the header title area */
+.skin-blue .main-header .logo {
+    background-color: #385F3E !important;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #FFC405 !important;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
