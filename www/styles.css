@@ -25,3 +25,29 @@ body {
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
 }
+
+.fun-submit-button {
+    background-color: #FFC405;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-shadow: none;
+}
+
+.fun-submit-button:hover {
+    background-color: #385F3E;
+    color: #ffffff;
+    transform: scale(1.03);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fun-submit-button:active {
+    background-color: #78d94c;
+    transform: scale(1.0);
+}
