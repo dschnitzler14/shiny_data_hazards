@@ -14,6 +14,7 @@ library(shinyjs)
 library(tidyverse)
 library(rvest)
 library(xml2)
+library(rsconnect)
 
 
 css_link <- tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
@@ -110,7 +111,7 @@ output$about_box_markdown <- renderUI({
 })
 
 observeEvent(input$data_hazards_project_link, {
-  browseURL("https://datahazards.com/")
+  tags$a(href = "https://datahazards.com/", "Open Data Hazards site", target = "_blank")
 
 })
 
