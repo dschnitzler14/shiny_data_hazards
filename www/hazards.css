@@ -1,0 +1,228 @@
+/* group label */
+.hazard-group-label {
+    font-weight: 600;
+    margin: 8px 0 12px;
+    font-size: 2rem;
+}
+
+/* responsive grid of items */
+.hazard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* each item: card + checkbox */
+.hazard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+/* remove default link styling from actionLink */
+.hazard-card-link,
+.hazard-card-link:focus,
+.hazard-card-link:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* the clickable card */
+.hazard-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #FFC405;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .05s ease;
+    box-sizing: border-box;
+}
+
+.hazard-card:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .06);
+}
+
+.hazard-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.hazard-title {
+    font-weight: 600;
+    font-size: .95rem;
+    line-height: 1.2;
+}
+
+/* checkbox under the card */
+.hazard-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hazard-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* modal layout */
+.hazard-modal {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.hazard-modal-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.hazard-modal-title {
+    margin: 0 0 6px 0;
+}
+
+.hazard-modal-desc {
+    margin: 0;
+}
+
+.hazard-divider {
+    margin: 24px 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    /* light gray */
+}
+
+.hazard-modal-body h5 {
+    margin: 12px 0 6px;
+}
+
+.hazard-modal-body p {
+    margin: 6px 0;
+}
+
+.hazard-modal-body ul {
+    margin: 6px 0 10px 20px;
+}
+
+.hazard-modal-body a {
+    text-decoration: none;
+}
+
+.hazard-modal-body a:hover {
+    text-decoration: underline;
+}
+
+/* tighten the space between card and checkbox */
+.hazard-item {
+    gap: 2px;
+}
+
+/* kill Bootstrap/Shiny default margins around the checkbox */
+.hazard-checkbox .shiny-input-container {
+    margin: 0 !important;
+}
+
+.hazard-checkbox .form-group {
+    margin: 0 !important;
+}
+
+/* for older BS selectors */
+.hazard-checkbox .checkbox {
+    margin: 0 !important;
+}
+
+/* BS default is 10px top/bottom */
+.hazard-checkbox label {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* keep the checkbox centered */
+.hazard-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+/* size of the actual checkbox */
+.hazard-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.hazard-checkbox .checkbox {
+    margin: 0 !important;
+    text-align: center;
+}
+
+.hazard-checkbox .checkbox label {
+    padding-left: 0 !important;
+    margin: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+/* Put the input back into normal flow (Bootstrap sets it absolute) */
+.hazard-checkbox .checkbox input[type="checkbox"] {
+    position: static !important;
+    margin: 0 !important;
+}
+
+/* If Shiny/Bootstrap renders an empty <span> after the input, hide it to avoid phantom width */
+.hazard-checkbox .checkbox label>span:empty {
+    display: none;
+}
+
+.hazard-checkbox {
+    transform: translateX(4px);
+}
+
+.hazard-checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    /* remove default */
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+/* When checked, use the orange fill */
+.hazard-checkbox input[type="checkbox"]:checked {
+    background-color: #FF5C3B;
+    border-color: #FF5C3B;
+}
+
+/* Draw the checkmark */
+.hazard-checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

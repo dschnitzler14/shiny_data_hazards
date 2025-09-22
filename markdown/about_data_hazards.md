@@ -1,6 +1,8 @@
 # About the Data Hazards Project
 
-About the Data Hazards project...
+Data Hazards is a project to help us all identify the hazards of using data science. Data scientists are great at selling our work, for example communicating the gains in efficiency and accuracy, but we are less well-practiced in thinking about the ethical implications of our work. The ethical implications go beyond most ethics Institutional Review Boards, to questions about the wider societal impact of data science and algorithms work.
+
+Read More about it <a href="https://datahazards.com/about.html" target="_blank">here</a>.
 
 # About this Companion App
 
