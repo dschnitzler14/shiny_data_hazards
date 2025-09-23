@@ -59,9 +59,14 @@ header <- dashboardHeader(
       actionLink("about_link", label = "About", icon = icon("info-circle"))
     ),
     tags$li(
-      class = "dropdown",
-      actionLink("data_hazards_project_link", label = "Data Hazards Project", icon = icon("arrow-up-right-from-square"))
+    class = "dropdown",
+    tags$a(
+      href = "https://datahazards.com/",
+      target = "_blank",
+      icon("arrow-up-right-from-square"),
+      "Data Hazards Project"
     )
+  )
   )
 
 
@@ -108,11 +113,6 @@ showModal(
 
 output$about_box_markdown <- renderUI({
     includeMarkdown("markdown/about_data_hazards.md")
-})
-
-observeEvent(input$data_hazards_project_link, {
-  tags$a(href = "https://datahazards.com/", "Open Data Hazards site", target = "_blank")
-
 })
 
 output$protocol_data_hazards_markdown <- renderUI({
